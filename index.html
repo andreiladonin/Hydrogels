@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Создания гидрогелей</title>
+</head>
+<body>    
+    <header class="mb-5">
+        <nav class="navbar bg-dark">
+            <div class="container-fluid">
+              <h3 class="navbar-brand text-light" href="#">Создания гидрогелей</h3>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="mb-4">Выбор базовых компонентов</h1>
+            <div class="mb-3">
+                <h2>Выберите полимер</h2>
+                <select class="form-select" id="polimer">
+                    <option selected>Выберите Полимер</option>
+                </select>
+            </div>
+        </div>
+    </main>
+
+    <!-- Модальный -->
+    <div id="myModal" class="modal">
+        <!-- Модальное содержание -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="printInfo">
+                
+            </div>
+              <button class="btn btn-success" id="pdfSave">
+                Сохранить в PDF
+              </button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/bootstrap.bundle.js.map"></script>
+    <script src="js/modal.js"></script>
+     <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
